@@ -1,6 +1,7 @@
 '''Given an array of integers, return a new array such
 that each elemnt at index i of the new array is the product of all
 the numbers in the original array expect the one at i
+This Solution runs in O(n) time and O(n) space
 '''
 def products(nums):
     inorderProduct = []
