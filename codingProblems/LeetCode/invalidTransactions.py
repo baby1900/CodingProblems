@@ -1,4 +1,4 @@
-'''
+"""
 A transaction is possibly invalid if:
 
 the amount exceeds $1000, or;
@@ -12,7 +12,9 @@ Input: transactions = ["alice,20,800,mtv","alice,50,100,beijing"]
 Output: ["alice,20,800,mtv","alice,50,100,beijing"]
 Explanation: The first transaction is invalid because the second transaction occurs within a difference of 60 minutes,
 have the same name and is in a different city. Similarly the second one is invalid too.
-'''
+"""
+
+
 import operator
 def invalidTransactions(transactions):
     outset = set()

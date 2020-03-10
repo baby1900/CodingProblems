@@ -1,9 +1,9 @@
-'''Given an array of integers that are out of roder
+"""Given an array of integers that are out of roder
 determine the bounds of the smallest window
 that must be sorted in order for the entire array to be sorted.
 For example, given [3,7,5,6,9], you should return (1,3)
 This solution runs in O(n) time and O(1) space
-'''
+"""
 
 def findWindow(inarr):
     smallestElement = inarr[-1]
@@ -18,6 +18,7 @@ def findWindow(inarr):
         if inarr[i] > smallestElement:
             left = i
     return(left, right)
+
 
 assert findWindow([2,3,1,6,5]) == (0,4)
 
