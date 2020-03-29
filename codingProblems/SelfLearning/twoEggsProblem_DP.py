@@ -1,4 +1,4 @@
-'''
+"""
 Suppose that we wish to know which stories in a 36-story building are safe to drop eggs from,
  and which will cause the eggs to break on landing. We make a few assumptions:
 
@@ -19,7 +19,7 @@ What is the least number of egg-droppings that is guaranteed to work in all case
 The problem is not actually to find the critical floor,
  but merely to decide floors from which eggs should be dropped so that total number of trials are minimized.
 
-'''
+"""
 
 
 

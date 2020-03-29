@@ -1,6 +1,6 @@
-'''
+"""
 Boyer-Moore string matching
-'''
+"""
 
 def createIndexDict(pattern: str):
     N = len(pattern)
