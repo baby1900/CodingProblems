@@ -11,7 +11,11 @@ def findElement(arr, start, end, element):
     N = end - start + 1
     if N == 1:
         return element == arr[0]
-    pivotIndex = random.randint(0, N - 1) + start
+    pivotIndex = start
+    midIndex = 0
+    while pivotIndex + 2 ** midIndex < end:
+        midIndex += 1
+    pivotIndex += 2 ** (midIndex - 1)
     if element == arr[pivotIndex]:
         return True
     elif element < arr[pivotIndex]:

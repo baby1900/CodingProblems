@@ -34,5 +34,4 @@ def findPattern(text: str, pattern:str):
             textIndex += max(1, determineJump(patternIndex, indexDict, text[textIndex]))
     return False
 
-
-print(findPattern("abcsdagdfads", "agd"))
+assert (findPattern("abcsdagdfads", "agd")) == 5
