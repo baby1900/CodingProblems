@@ -47,6 +47,7 @@ class ListNode:
                 currnode = currnode.next
             currnode.next = ListNode(value)
 
+
 def removeZeroSumSublists(head: ListNode) -> ListNode:
     resultHead = currNode = ListNode(0)
     resultHead.next = head
